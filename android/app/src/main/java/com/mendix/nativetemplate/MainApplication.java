@@ -13,6 +13,7 @@ import com.microsoft.codepush.react.CodePush;
 import org.devio.rn.splashscreen.SplashScreen;
 
 import java.util.List;
+import community.revteltech.nfc.NfcManagerPackage;
 
 public class MainApplication extends MendixReactApplication {
     @Override
@@ -27,7 +28,7 @@ public class MainApplication extends MendixReactApplication {
 
         // Packages that cannot be autolinked yet can be added manually here, for example:
         // packages.add(new MyReactNativePackage());
-        packages.add(new CodePush(getCodePushKey(), getApplicationContext(), BuildConfig.DEBUG));
+        packages.add(new CodePush(getCodePushKey(), getApplicationContext(), NfcManagerPackage(), BuildConfig.DEBUG));
 
         return packages;
     }
