@@ -98,7 +98,6 @@ project.ext.vectoricons = [
 ]
 
 dependencies {
-    implementation project(':react-native-audio-recorder-player')
     implementation project(":react-native-nfc-manager")
     implementation project(':react-native-splash-screen')
     implementation project(':react-native-code-push')
