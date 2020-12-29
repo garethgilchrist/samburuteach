@@ -14,6 +14,7 @@ import org.devio.rn.splashscreen.SplashScreen;
 
 import java.util.List;
 import community.revteltech.nfc.NfcManagerPackage;
+import com.dooboolab.RNAudioRecorderPlayerPackage;
 
 public class MainApplication extends MendixReactApplication {
     @Override
