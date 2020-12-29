@@ -54,6 +54,8 @@ target 'nativeTemplate' do
   use_native_modules!
   common_pods
   # Intentionally left empty
+  pod 'RNAudioRecorderPlayer', :path => '../node_modules/react-native-audio-recorder-player'
+
 end
 
 target 'dev' do
