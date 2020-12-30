@@ -15,6 +15,8 @@ import org.devio.rn.splashscreen.SplashScreen;
 import java.util.List;
 import community.revteltech.nfc.NfcManagerPackage;
 import com.dooboolab.RNAudioRecorderPlayerPackage;
+import com.wenkesj.voice.VoicePackage;
+
 
 public class MainApplication extends MendixReactApplication {
     @Override
@@ -31,6 +33,9 @@ public class MainApplication extends MendixReactApplication {
         // packages.add(new MyReactNativePackage());
         
         packages.add(new CodePush(getCodePushKey(), getApplicationContext(), BuildConfig.DEBUG));
+        packages.add(new VoicePackage());
+        package.add(new RNAudioRecorderPlayerPackage());
+
 
         return packages;
     }
