@@ -33,9 +33,6 @@ public class MainApplication extends MendixReactApplication {
         // packages.add(new MyReactNativePackage());
         
         packages.add(new CodePush(getCodePushKey(), getApplicationContext(), BuildConfig.DEBUG));
-        packages.add(new VoicePackage());
-        package.add(new RNAudioRecorderPlayerPackage());
-
 
         return packages;
     }
